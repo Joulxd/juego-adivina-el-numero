@@ -26,7 +26,7 @@ function verificarIntento(){
             }else{
                 if(numeroDeIntentos==3){
                     asignarTextoElementoHTML('h1',`Game Over`);
-                    asignarTextoElementoHTML('p',`Fallaste los ${numeroDeIntentos-1} intentos que tenías :( ${listaNumerosGenerados.length==1 ? ' No tenías racha' :`Racha de ${listaNumerosGenerados.length-1} ${listaNumerosGenerados.length==2 ? 'ronda' : 'rondas'}` }`);
+                    asignarTextoElementoHTML('p',`Fallaste los ${numeroDeIntentos} intentos que tenías :( ${listaNumerosGenerados.length==1 ? ' No tenías racha' :`Racha de ${listaNumerosGenerados.length-1} ${listaNumerosGenerados.length==2 ? 'ronda' : 'rondas'}` }`);
                     limpiarCampo();
                     desactivarElementoHTML('intentar');
                     desactivarElementoHTML('campoValorUsuario');
